@@ -1,8 +1,8 @@
 <img height="100" alt="hyperexecute_logo" src="https://user-images.githubusercontent.com/1688653/159473714-384e60ba-d830-435e-a33f-730df3c3ebc6.png">
 
-HyperExecute is a smart test orchestration platform to run end-to-end XCUI tests at the fastest speed possible. HyperExecute lets you achieve an accelerated time to market by providing a test infrastructure that offers optimal speed, test orchestration, and detailed execution logs.
+HyperExecute is a smart test orchestration platform to run end-to-end Playwright tests at the fastest speed possible. HyperExecute lets you achieve an accelerated time to market by providing a test infrastructure that offers optimal speed, test orchestration, and detailed execution logs.
 
-Integrating seamlessly into your existing Selenium Javascript testing suite, SmartUI SDK revolutionizes the way you approach visual regression testing. Our robust solution empowers you to effortlessly capture, compare, and analyze screenshots across a multitude of browsers and resolutions, ensuring comprehensive coverage and accuracy in your visual testing endeavors.
+Integrating seamlessly into your existing Playwright testing suite, SmartUI SDK revolutionizes the way you approach visual regression testing. Our robust solution empowers you to effortlessly capture, compare, and analyze screenshots across a multitude of browsers and resolutions, ensuring comprehensive coverage and accuracy in your visual testing endeavors.
 
 The overall experience helps teams test code and fix issues at a much faster pace. HyperExecute is configured using a YAML file. Instead of moving the Hub close to you, HyperExecute brings the test scripts close to the Hub!
 
@@ -26,7 +26,7 @@ To know more about how HyperExecute does intelligent Test Orchestration, do chec
 ## Prerequisites
 
 - Login to [HyperExecute](https://hyperexecute.lambdatest.com/) with your credentials.
-- Basic understanding of Command Line Interface and Selenium Javascript is required.
+- Basic understanding of Command Line Interface and Playwrightt is required.
 - Before using HyperExecute, you have to download HyperExecute CLI corresponding to the host OS. Along with it, you also need to export the environment variables *LT_USERNAME* and *LT_ACCESS_KEY* that are available in the [LambdaTest Profile](https://accounts.lambdatest.com/detail/profile) page.
 
 ### Clone the Sample Repository
