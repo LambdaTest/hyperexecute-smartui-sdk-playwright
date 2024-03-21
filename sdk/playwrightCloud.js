@@ -37,11 +37,19 @@ const KEY = process.env.LT_ACCESS_KEY || "<ACCESS_KEY>";
     )}`,
   });
 
-  const page = await browser.newPage();
 
-  await page.goto("https://www.lambdatest.com");
 
-  // Add the following command in order to take screenshot in SmartUI
-  await smartuiSnapshot.smartuiSnapshot(page, "LT-Home");
-  await browser.close();
+  try {
+    const page = await browser.newPage();
+    await page.goto("https://www.lambdatest.com");
+
+    // Add the following command in order to take screenshot in SmartUI
+    await smartuiSnapshot.smartuiSnapshot(page, "LT-Home");
+    await page.evaluate(_ => {}, `lambdatest_action: ${JSON.stringify({ action: 'setTestStatus', arguments: { status:'passed', remark: 'Title matched' } })}`)
+    await browser.close();
+  } catch (error) {
+    console.log(error);
+    await page.evaluate(_ => {}, `lambdatest_action: ${JSON.stringify({ action: 'setTestStatus', arguments: { status:'failed', remark: 'Title not matched' } })}`)
+  }
+
 })();

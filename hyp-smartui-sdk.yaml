@@ -13,14 +13,14 @@ maxRetries: 1
 concurrency: 1
 
 env:
-  PROJECT_TOKEN: "509662#d322ed12-916f-4b56-aa1d-0e4947122703#hyp-smartui-pw" #Enter your project token here
+  PROJECT_TOKEN: "YOUR_PROJECT_TOKEN" #Enter your project token here
 
 pre:
   - npm i @lambdatest/smartui-cli @lambdatest/playwright-driver playwright
   - npx smartui config:create smartui-web.json
 
 post:
-  - cat hyp-smartui-sdk-playwright.yaml
+  - cat hyp-smartui-sdk.yaml
 
 testDiscovery:
   type: raw
